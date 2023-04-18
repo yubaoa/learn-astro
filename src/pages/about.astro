@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'Dynamic About Page variable'
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 /** CSS variables */
 const skillItemColor = 'navy'
@@ -20,7 +20,7 @@ const textCase = 'uppercase'
     <style define:vars={{skillItemColor, fontWeight, textCase}}>
       h1 {
         color: purple;
-        font-size: 4rem;
+        font-size: 3.6rem;
       }
       ul>li {
         color: var(--skillItemColor);
